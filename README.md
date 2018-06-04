@@ -1,16 +1,17 @@
 # mongodb-docker-master-slave
 Trabalho de redes
 
-# //Passo a passo de como criar containers mongo (master-slave) no linux:
-# //Step by step of how to create mongo master-slave containers on linux:
-
+# //Passo a passo de como criar containers mongo (master-slave) no linux:<br>
+# //Step by step of how to create mongo master-slave containers on linux:<br>
+<p>
 //crie uma rede docker
 //create a docker network
-$docker network create my-mongo-cluster
+$docker network create my-mongo-cluster</p>
 
+<p>
 //liste as redes criadas
 //list all the docker networks
-$docker network ls
+$docker network ls</p>
 
 
 //execute e crie os containers setando o nome, a rede utilizada, a aplicacao mongo
