@@ -5,9 +5,7 @@ Trabalho de redes
 # //Step by step of how to create mongo master-slave containers on linux:<br>
 
 //crie uma rede docker
-
 //create a docker network
-
 $docker network create my-mongo-cluster..
 
 
