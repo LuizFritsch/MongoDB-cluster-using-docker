@@ -1,6 +1,3 @@
-# mongodb-docker-master-slave
-Trabalho de redes
-
 # //Passo a passo de como criar containers mongo (master-slave) no linux:<br>
 # //Step by step of how to create mongo master-slave containers on linux:<br>
 
