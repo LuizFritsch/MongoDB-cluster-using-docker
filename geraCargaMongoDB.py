@@ -1,6 +1,3 @@
-#java -jar ./latest-version/mongodb-performance-test.jar -m iterate_one -o 1000000 -t 10 -db test -c perf
-#ITERATE_ONE
-#https://github.com/idealo/mongodb-performance-test
 import pymongo
 from pymongo import MongoClient
 import random as randint
