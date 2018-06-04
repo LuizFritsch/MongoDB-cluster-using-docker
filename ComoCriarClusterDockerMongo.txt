@@ -1,0 +1,19 @@
+//cria a rede
+docker network create my-mongo-cluster
+
+//lista as redes criadas
+docker network ls
+
+//executa e cria os containers setando o nome, a rede utilizada, a aplicacao mongo
+docker run -p 30500:27017 --name container1 --net my-mongo-cluster mongo mongod --replSet my-mongo-set
+docker run -p 30501:27017 --name container2 --net my-mongo-cluster mongo mongod --replSet my-mongo-set
+docker run -p 30502:27017 --name container3 --net my-mongo-cluster mongo mongod --replSet my-mongo-set
+
+//aqui configura o container1 como mestre, e os dois restantes como escravos na porta 27017, padrao do mongo
+config={"_id":"my-mongo-set","members":[{"_id":0,"host":"container1:27017"},{"_id":1,"host":"container2:27017"},{"_id":2,"host":"container3:27017"}]}
+
+//inicializa a configuracao definida
+rs.initiate(config)
+
+//mapear porta 27017 pra que possa acessar a mesma dentro do container 
+docker run -d -p 27017:27017 mongo
