@@ -59,25 +59,30 @@ my-mongo-set:PRIMARY>
 my-mongo-set:SECONDARY>  
 
 3.Em cada um dos terminais respectivamente você deve inicializar com  
-3.On each terminal you should respectively initialize with  
+3.On each terminal you should respectively initialize with
+```python
 db = (new Mongo('container1:27017')).getDB('test')  
 db = (new Mongo('container2:27017')).getDB('test')  
 db = (new Mongo('container3:27017')).getDB('test')  
-
+```
 4.Agora você deve setar o container2 e o container3 como escravos(slave)  
-4.Now you must set container2 and container3 as slaves  
+4.Now you must set container2 and container3 as slaves
+```python
 db.setSlaveOk()  
-
+```
 5.Pronto! divirta-se!  
 5.Now it is ready! Have fun!  
 
 -Exemplos de operações com o mongo:  
--Examples of operations on mongo:  
+-Examples of operations on mongo:
+```python
 db.Personagens.insert({"nome":'captain america',"raca":'human',"classe":'warrior',"vida":97})  
 db.Personagens.find()  
 db.Personagens.find().pretty()  
 db.Personagens.find().count()  
 db.Personagens.remove({})  
+``` 
+
 
 *Se você deseja usar seu cluster de fora dos containers, utilize o pymongo. no arquivo geraCargaMongoDB.py, tem exemplos claros de como utilizar!  
 *If you want to use your cluster from outside it, you should use pymongo. The file geraCargaMongoDB.py has clear examples of how to use it!   
