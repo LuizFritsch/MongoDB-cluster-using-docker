@@ -1,5 +1,5 @@
-# //Passo a passo de como criar containers mongo (master-slave) no linux:<br>
-# //Step by step of how to create mongo master-slave containers on linux:<br>
+# Passo a passo de como criar containers mongo (master-slave) no linux:<br>
+# Step by step of how to create mongo master-slave containers on linux:<br>
 
 1.Crie uma rede docker  
 1.Create a docker network
