@@ -54,10 +54,11 @@ WhoAmI@WhoAmI:~$ docker exec -it container2 mongo
 WhoAmI@WhoAmI:~$ docker exec -it container3 mongo  
 ```
 Deve aparecer algo como:  
-terminal should looks like this:
+terminal should looks like this:     
+```console
 my-mongo-set:PRIMARY>  
 my-mongo-set:SECONDARY>  
-
+``` 
 3.Em cada um dos terminais respectivamente você deve inicializar com  
 3.On each terminal you should respectively initialize with
 ```python
