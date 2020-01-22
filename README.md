@@ -73,6 +73,7 @@ db.Personagens.remove({})
 *Se você deseja usar seu cluster de fora dos containers, utilize o pymongo. no arquivo geraCargaMongoDB.py, tem exemplos claros de como utilizar!  
 
 
+
 # Step by step of how to create mongo master-slave containers on linux:<br>
 1.Create a docker network
 ```console
